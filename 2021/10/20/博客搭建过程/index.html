@@ -29,7 +29,7 @@
 <meta property="og:image" content="http://example.com/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/id_rsa.png">
 <meta property="og:image" content="http://example.com/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/wyyyy.png">
 <meta property="article:published_time" content="2021-10-19T19:12:44.000Z">
-<meta property="article:modified_time" content="2021-10-24T10:34:29.175Z">
+<meta property="article:modified_time" content="2021-10-24T15:24:58.199Z">
 <meta property="article:author" content="Max Liu">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -222,21 +222,28 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-10-24 18:34:29" itemprop="dateModified" datetime="2021-10-24T18:34:29+08:00">2021-10-24</time>
+                <time title="Modified: 2021-10-24 23:24:58" itemprop="dateModified" datetime="2021-10-24T23:24:58+08:00">2021-10-24</time>
               </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>1.2k</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -259,7 +266,7 @@
 <p>另一方面，我要感谢<a target="_blank" rel="noopener" href="https://lilianweng.github.io/lil-log/">Lilian Weng</a>的博客让我重拾写作总结的动力，她的博客简洁且精炼，以及在博客中展现的个人形象让我觉得是时候再次坚定自己的工作态度了。就说这么多，加油！</p>
 <h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="生成密钥需小心"><a href="#生成密钥需小心" class="headerlink" title="生成密钥需小心"></a>生成密钥需小心</h2><p>为了在本地写博客，并同步到GitHub上，需要在本地生成一个密钥，然后存在GitHub账户里就好了</p>
 <p>这次我换新博客，所以选择不输入任何路径信息，并覆盖了原来账户的密钥。这样肯定不好，但是暂时我也不知道怎么生成名字不一样的密钥文件😄</p>
-<img src="/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/id_rsa.png" class title="This is an example image">
+<img src="/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/id_rsa.png" class title="新密钥示例">
 
 <h2 id="本地直接下载NexT"><a href="#本地直接下载NexT" class="headerlink" title="本地直接下载NexT"></a>本地直接下载<code>NexT</code></h2><p>很简单，在早就下好的<code>Git Bash</code>里下载初始化的<code>Next</code>模板就行了，参考<a href="#4th">[4]</a>即可</p>
 <h2 id="NexT下4个小主题选择"><a href="#NexT下4个小主题选择" class="headerlink" title="NexT下4个小主题选择"></a><code>NexT</code>下4个小主题选择</h2><p>以前我用<code>NexT</code>时就看中了<a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a>，这次仍然用这个</p>
@@ -272,6 +279,8 @@
 <blockquote>
 <p>其实这次创建文件的时候忘了改这个设置，最后我是删掉了博客重新一次性生成文件和对应文件夹的</p>
 </blockquote>
+<hr>
+<p>但是紧接着怎么又出问题，难道新版的包不能显示图片的标题么？图片点开的功能也不见了，网上也找不到解决方案。。</p>
 <h2 id="每篇阅读时间添加"><a href="#每篇阅读时间添加" class="headerlink" title="每篇阅读时间添加"></a>每篇阅读时间添加</h2><p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34626094/article/details/113109957">Hexo博客Next主题 字数统计和阅读时长失效</a>，把下面的代码直接加在主题配置文件最后面即可</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/willin/hexo-wordcount</span></span><br><span class="line">post_wordcount:</span><br><span class="line">  item_text: <span class="literal">true</span></span><br><span class="line">  wordcount: <span class="literal">true</span></span><br><span class="line">  min2read: <span class="literal">true</span></span><br><span class="line">  separated_meta: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
@@ -291,6 +300,11 @@
 <li>如何主页显示此外链，博客正文页不显示</li>
 </ol>
 </blockquote>
+<h2 id="新博客的branch设置（重要）"><a href="#新博客的branch设置（重要）" class="headerlink" title="新博客的branch设置（重要）"></a>新博客的branch设置（重要）</h2><p>注意，现在在新号里创建博客的时候，仓库里的默认分支是<code>main</code>，而以前的都是<code>master</code>，现在的博客通用设置还是之前的，会导致<code>hexo d</code>之后，文件都上传到了仓库的一个新分支<code>master</code>中，导致博客显示不出来</p>
+<p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43423781/article/details/120446848">解决使用github+Coding+码云部署hexo网站仓库分支不一样的问题(master or main）</a>，在站点配置文件中改下分支就行了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:XXX/XXX.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<h2 id="访问量添加"><a href="#访问量添加" class="headerlink" title="访问量添加"></a>访问量添加</h2><p>在<code>./themes/next/</code>下的配置文件直接把<code>busuanzi</code>改成<code>true</code>就行了，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34326179/article/details/89610352">Hexo+Next主题 文章添加阅读次数，访问量等</a></p>
 <h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><span id="1st">[1] <a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/theme-settings.html">主题配置 - NexT 使用文档</a></span></p>
 <p><span id="2nd">[2] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3a05351a37dc">Hexo的Next主题详细配置</a></span></p>
 <p>[3] <a target="_blank" rel="noopener" href="https://maxliu245.github.io/">Max Liu’s Blog</a></p>
@@ -380,7 +394,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">动机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E9%9C%80%E5%B0%8F%E5%BF%83"><span class="nav-number">2.1.</span> <span class="nav-text">生成密钥需小心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BDNexT"><span class="nav-number">2.2.</span> <span class="nav-text">本地直接下载NexT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT%E4%B8%8B4%E4%B8%AA%E5%B0%8F%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="nav-number">2.3.</span> <span class="nav-text">NexT下4个小主题选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About%E3%80%81Tags%E7%AD%89%E5%B8%B8%E7%94%A8%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.4.</span> <span class="nav-text">About、Tags等常用页面添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BE%E4%BA%A4%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.5.</span> <span class="nav-text">社交联系方式添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98-amp-%E7%BC%A9%E7%95%A5%E5%9B%BE"><span class="nav-number">2.6.</span> <span class="nav-text">网站标题&amp;缩略图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.7.</span> <span class="nav-text">导入图片的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%8F%E7%AF%87%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.8.</span> <span class="nav-text">每篇阅读时间添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E5%8F%8B%E9%93%BE-amp-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90"><span class="nav-number">2.9.</span> <span class="nav-text">侧边栏与友链&amp;网易云音乐</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">3.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">动机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E9%9C%80%E5%B0%8F%E5%BF%83"><span class="nav-number">2.1.</span> <span class="nav-text">生成密钥需小心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BDNexT"><span class="nav-number">2.2.</span> <span class="nav-text">本地直接下载NexT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NexT%E4%B8%8B4%E4%B8%AA%E5%B0%8F%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="nav-number">2.3.</span> <span class="nav-text">NexT下4个小主题选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About%E3%80%81Tags%E7%AD%89%E5%B8%B8%E7%94%A8%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.4.</span> <span class="nav-text">About、Tags等常用页面添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BE%E4%BA%A4%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.5.</span> <span class="nav-text">社交联系方式添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98-amp-%E7%BC%A9%E7%95%A5%E5%9B%BE"><span class="nav-number">2.6.</span> <span class="nav-text">网站标题&amp;缩略图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.7.</span> <span class="nav-text">导入图片的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%8F%E7%AF%87%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.8.</span> <span class="nav-text">每篇阅读时间添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E5%8F%8B%E9%93%BE-amp-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90"><span class="nav-number">2.9.</span> <span class="nav-text">侧边栏与友链&amp;网易云音乐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%8D%9A%E5%AE%A2%E7%9A%84branch%E8%AE%BE%E7%BD%AE%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="nav-number">2.10.</span> <span class="nav-text">新博客的branch设置（重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E9%87%8F%E6%B7%BB%E5%8A%A0"><span class="nav-number">2.11.</span> <span class="nav-text">访问量添加</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">3.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -484,12 +498,32 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1 mins.</span>
+    <span title="Reading time total">2 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
