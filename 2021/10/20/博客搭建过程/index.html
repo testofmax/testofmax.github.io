@@ -262,13 +262,11 @@
 <p>在此重新记录搭建博客的过程，也方便以后再去查询</p>
 </blockquote>
 <span id="more"></span>
-
 <h1 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h1><p>一方面是我个人的原因。以前不更博客有两个主要原因，一是在水了很多字数之后觉得单纯记录各类笔记意思不大；二是<strong>懈怠</strong>了</p>
 <p>另一方面，我要感谢<a target="_blank" rel="noopener" href="https://lilianweng.github.io/lil-log/">Lilian Weng</a>的博客让我重拾写作总结的动力，她的博客简洁且精炼，以及在博客中展现的个人形象让我觉得是时候再次坚定自己的工作态度了。就说这么多，加油！</p>
 <h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="生成密钥需小心"><a href="#生成密钥需小心" class="headerlink" title="生成密钥需小心"></a>生成密钥需小心</h2><p>为了在本地写博客，并同步到GitHub上，需要在本地生成一个密钥，然后存在GitHub账户里就好了</p>
 <p>这次我换新博客，所以选择不输入任何路径信息，并覆盖了原来账户的密钥。这样肯定不好，但是暂时我也不知道怎么生成名字不一样的密钥文件😄</p>
 <img src="/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/id_rsa.png" class title="新密钥示例">
-
 <h2 id="本地直接下载NexT"><a href="#本地直接下载NexT" class="headerlink" title="本地直接下载NexT"></a>本地直接下载<code>NexT</code></h2><p>很简单，在早就下好的<code>Git Bash</code>里下载初始化的<code>Next</code>模板就行了，参考<a href="#4th">[4]</a>即可</p>
 <h2 id="NexT下4个小主题选择"><a href="#NexT下4个小主题选择" class="headerlink" title="NexT下4个小主题选择"></a><code>NexT</code>下4个小主题选择</h2><p>以前我用<code>NexT</code>时就看中了<a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a>，这次仍然用这个</p>
 <p>设置方式参考<a href="#2nd">[2]</a>即可</p>
@@ -285,12 +283,10 @@
 <p>终于我在<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32767041/article/details/105084853">这里</a>发现标题主动显示和<code>fancybox</code>有关。。然后去主题配置里把它设成<code>true</code>就有图片标题了。。</p>
 <h2 id="每篇阅读时间添加"><a href="#每篇阅读时间添加" class="headerlink" title="每篇阅读时间添加"></a>每篇阅读时间添加</h2><p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34626094/article/details/113109957">Hexo博客Next主题 字数统计和阅读时长失效</a>，把下面的代码直接加在主题配置文件最后面即可</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Post wordcount display settings</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/willin/hexo-wordcount</span></span><br><span class="line">post_wordcount:</span><br><span class="line">  item_text: <span class="literal">true</span></span><br><span class="line">  wordcount: <span class="literal">true</span></span><br><span class="line">  min2read: <span class="literal">true</span></span><br><span class="line">  separated_meta: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
 <p>注意如果出现阅读时间为<code>NaN:aN</code>的情况，一般是博客文件创建时，文件开头的<code>date</code>没有精确到秒导致的，手动加上具体时间就行</p>
 <h2 id="侧边栏与友链-amp-网易云音乐"><a href="#侧边栏与友链-amp-网易云音乐" class="headerlink" title="侧边栏与友链&amp;网易云音乐"></a>侧边栏与友链&amp;网易云音乐</h2><p>侧边栏友链只需要在主题配置文件中直接加即可，参考<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57dd558b2b42">Hexo Next主题添加友情链接</a></p>
 <p>在<u>Next</u>主题下，自定义主页侧边栏的路径在</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\themes\next\layout\_macro\sidebar.swig</span><br></pre></td></tr></table></figure>
-
 <p>在里面判断一下可以插入新东西的位置即可，我选择的如下所示：</p>
 <div style="width:90%;margin:auto"><img src="/2021/10/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/wyyyy.png" class title="我选择的插入位置"></div>
 
@@ -305,13 +301,12 @@
 <h2 id="新博客的branch设置（重要）"><a href="#新博客的branch设置（重要）" class="headerlink" title="新博客的branch设置（重要）"></a>新博客的branch设置（重要）</h2><p>注意，现在在新号里创建博客的时候，仓库里的默认分支是<code>main</code>，而以前的都是<code>master</code>，现在的博客通用设置还是之前的，会导致<code>hexo d</code>之后，文件都上传到了仓库的一个新分支<code>master</code>中，导致博客显示不出来</p>
 <p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43423781/article/details/120446848">解决使用github+Coding+码云部署hexo网站仓库分支不一样的问题(master or main）</a>，在站点配置文件中改下分支就行了：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:XXX/XXX.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-
 <h2 id="访问量添加"><a href="#访问量添加" class="headerlink" title="访问量添加"></a>访问量添加</h2><p>在<code>./themes/next/</code>下的配置文件直接把<code>busuanzi</code>改成<code>true</code>就行了，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_34326179/article/details/89610352">Hexo+Next主题 文章添加阅读次数，访问量等</a></p>
 <h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p><span id="1st">[1] <a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/theme-settings.html">主题配置 - NexT 使用文档</a></span></p>
 <p><span id="2nd">[2] <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3a05351a37dc">Hexo的Next主题详细配置</a></span></p>
 <p>[3] <a target="_blank" rel="noopener" href="https://maxliu245.github.io/">Max Liu’s Blog</a></p>
 <p><span id="4th">[4] <a target="_blank" rel="noopener" href="https://www.cnblogs.com/visugar/p/6821777.html">hexo从零开始到搭建完整</a></span></p>
-
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     
@@ -332,7 +327,10 @@
     <a href="/2021/10/20/hello-world/" rel="prev" title="Hello World">
       <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/12/12/Reading-List%E5%B0%8F%E8%AE%B0/" rel="next" title="Reading List小记">
+      Reading List小记 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -418,14 +416,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -483,6 +481,8 @@
 
         
 
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="copyright">
   
   &copy; 
@@ -495,12 +495,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">2k</span>
+    <span title="Symbols count total">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">2 mins.</span>
+    <span title="Reading time total">6 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
@@ -577,6 +577,8 @@
 
 
 
+
+  
 
   
 
